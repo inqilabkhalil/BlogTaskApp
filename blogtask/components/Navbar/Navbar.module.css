@@ -1,0 +1,79 @@
+/* ── Navbar ── */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #f0f0f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* ── Inner ── */
+.inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0.9rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ── Brand ── */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #111827;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  transition: color 0.2s ease;
+}
+
+.brand span {
+  color: #4f46e5;
+}
+
+.brand:hover {
+  color: #4f46e5;
+}
+
+/* ── New Post Button ── */
+.newPostBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.1rem;
+  background: #4f46e5;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition:
+    background 0.2s ease,
+    transform 0.1s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 1px 3px rgba(79, 70, 229, 0.3);
+}
+
+.newPostBtn:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.35);
+}
+
+.newPostBtn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(79, 70, 229, 0.3);
+}
+
+.plus {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1;
+}

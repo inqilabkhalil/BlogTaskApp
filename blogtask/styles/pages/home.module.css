@@ -1,0 +1,48 @@
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+}
+
+.title span {
+  color: #4f46e5;
+}
+
+/* ── Error ── */
+.error {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  color: #b91c1c;
+  background: #fef2f2;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.4rem;
+  border: 1px solid #fecaca;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* ── Empty State ── */
+.empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+/* ── Post List ── */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}

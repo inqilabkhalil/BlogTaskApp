@@ -1,0 +1,185 @@
+/* ── Reset & Variables ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary:    #4f46e5;
+  --primary-hover: #4338ca;
+  --danger:     #ef4444;
+  --danger-hover: #dc2626;
+  --bg:         #f9fafb;
+  --card-bg:    #ffffff;
+  --text:       #111827;
+  --muted:      #6b7280;
+  --border:     #e5e7eb;
+  --radius:     8px;
+  --shadow:     0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ── Layout ── */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ── Navbar ── */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow);
+}
+
+.nav-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+/* ── Buttons ── */
+button,
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s, transform 0.1s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+}
+
+.btn-danger {
+  background: var(--danger);
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: var(--danger-hover);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ── Post Card ── */
+.post-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: transform 0.2s;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+}
+
+.post-card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.post-card p {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+/* ── Forms ── */
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-family: inherit;
+  background: var(--card-bg);
+  color: var(--text);
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* ── Error / Info ── */
+.error {
+  color: var(--danger);
+  background: #fef2f2;
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  border: 1px solid #fecaca;
+}
+
+.loading {
+  text-align: center;
+  color: var(--muted);
+  padding: 2rem;
+}
+
+/* ── Post Detail ── */
+.post-detail h1 {
+  margin-bottom: 1rem;
+}
+
+.post-detail p {
+  color: var(--muted);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.post-actions {
+  display: flex;
+  gap: 0.75rem;
+}

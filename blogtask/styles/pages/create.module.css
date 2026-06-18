@@ -1,0 +1,51 @@
+/* ── Container ── */
+.container {
+  max-width: 680px;
+}
+
+/* ── Header ── */
+.header {
+  margin-bottom: 1.75rem;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: color 0.2s ease;
+}
+
+.back:hover {
+  color: #4f46e5;
+}
+
+.back::before {
+  content: "←";
+  transition: transform 0.2s ease;
+}
+
+.back:hover::before {
+  transform: translateX(-3px);
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+}
+
+.title span {
+  color: #4f46e5;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}

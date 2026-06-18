@@ -1,0 +1,103 @@
+/* ── Card ── */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #f0f0f0;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.06),
+    0 4px 16px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.08),
+    0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.badge {
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #4f46e5;
+  background: #eef2ff;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* ── Body ── */
+.preview {
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+/* ── Divider ── */
+.divider {
+  height: 1px;
+  background: #f3f4f6;
+  margin-bottom: 1.25rem;
+}
+
+/* ── Footer ── */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.readMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4f46e5;
+  text-decoration: none;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.readMore:hover {
+  color: #4338ca;
+  gap: 0.6rem;
+}
+
+.readMore::after {
+  content: "→";
+  transition: transform 0.2s ease;
+}
+
+.readMore:hover::after {
+  transform: translateX(3px);
+}
+
+.postId {
+  font-size: 0.78rem;
+  color: #d1d5db;
+  font-weight: 500;
+}
